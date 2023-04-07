@@ -543,7 +543,7 @@ button[type="submit"] {
     padding: 1em;
 }
 
-section {
+.section-contacto {
     margin: 2em auto;
     max-width: 600px;
 }
