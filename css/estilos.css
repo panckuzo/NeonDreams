@@ -4,6 +4,7 @@ body {
     font-size: 16px;
     color: #fff;
     background-color: #000;
+    overflow: hidden;
 }
 
 html {
@@ -15,17 +16,14 @@ nav {
     background-color: #333;
     color: #fff;
     font-family: Arial, sans-serif;
-
-}
+    }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-
 }
-
 
 .menu ul {
     list-style: none;
@@ -33,7 +31,6 @@ nav {
     padding: 0;
     display: flex;
 }
-
 
 .menu li {
     margin: auto;
@@ -109,7 +106,7 @@ nav {
         0 0 20px #fff,
         0 0 30px #fff,
         0 0 40px #ff00de,
-        0 0 70px #ff00de,
+        0 0 70px #c2c2c2,
         0 0 80px #ff00de,
         0 0 100px #ff00de,
         0 0 150px #ff00de;
@@ -146,16 +143,8 @@ nav {
 .hero h1 {
     font-size: 6rem;
     margin-bottom: 1rem;
+    max-width: 100%;
 }
-
-.hero h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-family: 'Pacifico', cursive;
-    color: red;
-}
-
-
 
 
 /* Estilos de la sección de productos destacados */
@@ -561,3 +550,40 @@ a {
 a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 425px) 
+    {
+    .hero h1
+    {
+    font-size: 4rem;
+    }
+    ul
+    {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    }
+    }
+
+@media screen and (max-width: 768px){
+    .hero h1{
+        font-size: 4rem;
+    }
+    ul
+    {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    }
+    }
+
+    @media screen and (max-width: 1024px){
+        .hero h1{
+            max-width: 100%;
+        }
+        ul
+        {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        }
+        }
